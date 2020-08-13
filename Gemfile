@@ -20,6 +20,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
+gem 'faker'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
