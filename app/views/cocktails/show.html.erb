@@ -2,7 +2,7 @@
   <div class="card-trip my-3">
   <div class="card-trip-infos">
     <div>
-      <h3><%= @cocktail.name 🤡%></h3>
+      <h3><%= @cocktail.name %></h3>
     </div>
     <div class="dose-container">
       <div class="ingredients-header">
@@ -15,7 +15,7 @@
             <div class="dose-form-container p-3">
               <%= simple_form_for([@cocktail, @dose]) do |f| %>
                 <%= f.input :description, placeholder: 'Come on honey' %>
-                <%= f.input :ingredient %>
+                <%= f.association :ingredient %>
                 <%= f.submit 'Add a dose' %>
               <% end %>
             </div>
