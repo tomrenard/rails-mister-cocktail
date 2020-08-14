@@ -15,7 +15,7 @@
             <div class="dose-form-container p-3">
               <%= simple_form_for([@cocktail, @dose]) do |f| %>
                 <%= f.input :description, placeholder: 'Come on honey' %>
-                <%= f.association :ingredient %>
+                <%= f.input :ingredient %>
                 <%= f.submit 'Add a dose' %>
               <% end %>
             </div>
