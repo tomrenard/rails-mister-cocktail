@@ -1,5 +1,5 @@
 <div class="container">
-  <h1> All cocktails <%= link_to 'Add a new cocktail', new_cocktail_path, class: "btn btn-primary" %> </h1>
+  <h1> All cocktails 🐼 <%= link_to 'Add a new cocktail', new_cocktail_path, class: "btn btn-primary" %> </h1>
   <br>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
@@ -9,7 +9,7 @@
               <h2><%= link_to cocktail.name, cocktail_path(cocktail)%> </h2>
               <img src="https://source.unsplash.com/random/200x200/?cocktail" alt="Girl in a jacket" width="200" height="200">
           </div>
-          <%=link_to "Details", cocktail_path(cocktail), class:"card-link" %>
+          <%=link_to "Details 🐢", cocktail_path(cocktail), class:"card-link" %>
         </div>
       </div>
     <% end %>
