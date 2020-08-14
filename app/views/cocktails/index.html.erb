@@ -6,9 +6,10 @@
       <div class="col-xs-12 col-sm-4">
         <div class="card">
           <div class="card-description">
-              <h2>Name: <%= link_to cocktail.name%> </h2>
+              <h2><%= link_to cocktail.name, cocktail_path(cocktail)%> </h2>
+              <img src="https://source.unsplash.com/random/200x200/?cocktail" alt="Girl in a jacket" width="200" height="200">
           </div>
-          <%=link_to "", cocktail_path(cocktail), class:"card-link" %>
+          <%=link_to "Details", cocktail_path(cocktail), class:"card-link" %>
         </div>
       </div>
     <% end %>

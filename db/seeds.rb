@@ -4,6 +4,7 @@ Cocktail.destroy_all
 
 10.times do
   Cocktail.create(name: Faker::Hipster.word)
+  Cocktail.photo.attach(io: file, filename: 'https://source.unsplash.com/random/200x200', content_type: 'image/png')
 end
 
 
